@@ -10,7 +10,7 @@
     
     
     
-    <title>编程基础 | Synergism</title>
+    <title>实训一 | Synergism</title>
     <link href="http://yoursite.com" rel="prefetch" />
 
     <link rel="stylesheet" href="/css/bootstrap.min.css">
@@ -180,13 +180,13 @@
         <i class="fa fa-home"></i>
         <a href="http://yoursite.com">Synergism</a>
         >
-        <span>编程基础</span>
+        <span>实训一</span>
     </div>
     <!-- 大型设备详细文章 -->
     <div class="hidden-xs">
         <div class="title-article">
             <h1>
-                <a href="/2019/12/01/%E7%BC%96%E7%A8%8B%E5%9F%BA%E7%A1%80/">编程基础</a>
+                <a href="/2019/12/01/%E5%AE%9E%E8%AE%AD%E4%B8%80/">实训一</a>
             </h1>
         </div>
         <div class="tag-article">
@@ -194,7 +194,7 @@
             <span class="label label-gal">
                 <i class="fa fa-tags"></i>
                 
-                <a href="/tags/JAVA/">JAVA</a>
+                <a href="/tags/%E5%AE%9E%E8%AE%AD/">实训</a>
                 
             </span>
             
@@ -213,7 +213,7 @@
         <center>
             <div class="title-article">
                 <h4>
-                    <a href="/2019/12/01/%E7%BC%96%E7%A8%8B%E5%9F%BA%E7%A1%80/">编程基础</a>
+                    <a href="/2019/12/01/%E5%AE%9E%E8%AE%AD%E4%B8%80/">实训一</a>
                 </h4>
             </div>
             <p>
@@ -223,7 +223,7 @@
                 
                 <i class="fa fa-tags"></i>
                 
-                <a href="/tags/JAVA/">JAVA</a>
+                <a href="/tags/%E5%AE%9E%E8%AE%AD/">实训</a>
                 
                 
                 
@@ -233,29 +233,17 @@
         </center>
     </div>
     <div class="content-article">
-        <h1 id="概述"><a href="#概述" class="headerlink" title="概述"></a><strong>概述</strong></h1><hr>
-<h2 id="字符集"><a href="#字符集" class="headerlink" title="字符集"></a>字符集</h2><p>采用16位的Unicode字符集，共包括65536个字符。<br>前128个字符与ASCII字符集相同，包括汉字、日文、希腊字母等。</p>
+        <h1 id="1、编写一个程序，指定三门课程的成绩，计算平均成绩并输出。"><a href="#1、编写一个程序，指定三门课程的成绩，计算平均成绩并输出。" class="headerlink" title="1、编写一个程序，指定三门课程的成绩，计算平均成绩并输出。"></a>1、编写一个程序，指定三门课程的成绩，计算平均成绩并输出。</h1><p><strong>我的程序</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">public class Synergism &#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">	public static void main(String[] args) &#123;		</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">		int math,eng,comp;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">		int aterage;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line">		math&#x3D;99;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line">		eng&#x3D;90;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">7</span></pre></td><td class="code"><pre><span class="line">		comp&#x3D;95;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">8</span></pre></td><td class="code"><pre><span class="line">		int average &#x3D; (math + eng + comp)&#x2F;3;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">9</span></pre></td><td class="code"><pre><span class="line">		System.out.println(&quot;数学成绩&#x3D;&quot;+math);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">10</span></pre></td><td class="code"><pre><span class="line">		System.out.println(&quot;英语成绩&#x3D;&quot;+eng);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">11</span></pre></td><td class="code"><pre><span class="line">		System.out.println(&quot;计算机成绩&#x3D;&quot;+comp);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">12</span></pre></td><td class="code"><pre><span class="line">		System.out.println(&quot;平均成绩&#x3D;&quot;+average);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">13</span></pre></td><td class="code"><pre><span class="line">	&#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">14</span></pre></td><td class="code"><pre><span class="line">&#125;</span></pre></td></tr></table></figure>
+<p><strong>我的结果</strong><br>数学成绩=99<br>英语成绩=90<br>计算机成绩=95<br>平均成绩=94</p>
 <hr>
-<h2 id="标识符"><a href="#标识符" class="headerlink" title="标识符"></a>标识符</h2><p>一切名字的总称<br>1.组成：字母、数字、下划线、$<br>2.非数字打头，长度不限<br>3.不能是关键字<br>4.区别大小写</p>
+<h1 id="2、编一个程序，定义常量Pi-3-14159265-从键盘上输入半径r-求出圆的面积。"><a href="#2、编一个程序，定义常量Pi-3-14159265-从键盘上输入半径r-求出圆的面积。" class="headerlink" title="2、编一个程序，定义常量Pi=3.14159265,从键盘上输入半径r,求出圆的面积。"></a>2、编一个程序，定义常量Pi=3.14159265,从键盘上输入半径r,求出圆的面积。</h1><p><strong>我的程序</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">import java.util.*;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">public class Synergism &#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">	public static void main(String[] args) &#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">		final double pi&#x3D;3.14159;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line">		double r,area;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line">		Scanner rd&#x3D; new Scanner(System.in);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">7</span></pre></td><td class="code"><pre><span class="line">		System.out.print(&quot;请输入圆的半径：&quot;);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">8</span></pre></td><td class="code"><pre><span class="line">		r&#x3D;rd.nextDouble();</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">9</span></pre></td><td class="code"><pre><span class="line">		area&#x3D;pi*r*r;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">10</span></pre></td><td class="code"><pre><span class="line">		System.out.println(&quot;半径&#x3D;&quot;+r+&quot;的圆面积&#x3D;&quot;+area);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">11</span></pre></td><td class="code"><pre><span class="line">	&#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">12</span></pre></td><td class="code"><pre><span class="line">&#125;</span></pre></td></tr></table></figure>
+<p><strong>我的结果</strong><br>输入20<br>输出圆的面积为1256.636</p>
 <hr>
-<h2 id="关键字"><a href="#关键字" class="headerlink" title="关键字"></a>关键字</h2><p>也称保留字<br>具有特定还以的单词（全部由小写英文字母组成）<br>JIAVA中总共有51个关键字<br><img src="/images/%E5%85%B3%E9%94%AE%E5%AD%97.png" alt="alt"></p>
-<hr>
-<h2 id="注释"><a href="#注释" class="headerlink" title="注释"></a>注释</h2><p>不参与程序的运行<br><strong>单行注释</strong> </p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; 内容</span></pre></td></tr></table></figure>
-<p><strong>多行注释</strong> </p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">&#x2F;* </span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">。。。。。。</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">。。。。。。</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">。。。。。。</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line">*&#x2F;</span></pre></td></tr></table></figure>
-<p><strong>文档注释</strong></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">&#x2F;**  </span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">。。。。。。</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">是对一段代码概括性的解释说明</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">（用于对方法和类加以说明）</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line"> 。。。。。。</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line">*&#x2F;</span></pre></td></tr></table></figure>
-<hr>
-<h1 id="命名"><a href="#命名" class="headerlink" title="命名"></a><strong>命名</strong></h1><hr>
-<p><strong>UpperCamelCase</strong>（大驼峰式命名法）<br>适用于：类名、接口名<br>每个单词的首字母大写<br>如: Age<br>    SumOfApple<br>    DayOfWeek</p>
-<p><strong>lowerCamelCase</strong> （小驼峰式命名法）<br>适用于：局部变量名、参数名、<br>成员变量名、方法名<br>第一个单词的首字母不大写，其余单词首字母大写<br>如:age<br>   sumOfApple<br>   dayOfWeek</p>
-<hr>
-<h1 id="数据类型"><a href="#数据类型" class="headerlink" title="数据类型"></a><strong>数据类型</strong></h1><hr>
-<h2 id="基本数据类型"><a href="#基本数据类型" class="headerlink" title="基本数据类型"></a>基本数据类型</h2><p>都是值类型，其变量存储实际数据的值<br>1.整型（4种） ：只有十进制、八进制（0打头）和十六进制(0x、0X前缀)。<br>2.实型（2种）: 小数表示法和指数表示法，只有十进制。<br>3.字符型<br>4.布尔型<br><img src="/images/%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B.png" alt="alt"><br>注:<br>1字节（Byte） = 8位（bit， 比特）<br>内存按字节单位存取数据<br>1K(B) = 1024  (B)<br>1M(B) = 1024 K(B)<br>1G(B) = 1024 M(B)<br>1T(B) = 1024 G(B)</p>
-<hr>
-<h2 id="引用类型"><a href="#引用类型" class="headerlink" title="引用类型"></a>引用类型</h2><p>其变量存储实际数据的地址<br>包括：字符串、数组、类、接口，所有引用类型的默认值都是null。<br>（字符串类型：String常量 “一串字符”，默认值为 null）<br>如：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">String  zhang &#x3D; “ZhangSan”;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">String  xiaoZhang &#x3D; zhang;</span></pre></td></tr></table></figure>
+<h1 id="3、请输入两个double型的数作为直角三角形的两条直角边长，然后根据勾股定理计算出斜边长。"><a href="#3、请输入两个double型的数作为直角三角形的两条直角边长，然后根据勾股定理计算出斜边长。" class="headerlink" title="3、请输入两个double型的数作为直角三角形的两条直角边长，然后根据勾股定理计算出斜边长。"></a>3、请输入两个double型的数作为直角三角形的两条直角边长，然后根据勾股定理计算出斜边长。</h1><p><strong>我的程序</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">import java.util.*;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">public class Synergism &#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">	public static void main(String[] args) &#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">		double a,b;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line">		Scanner rd&#x3D; new Scanner(System.in);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line">		System.out.print(&quot;请输入第一条边的长度：&quot;);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">7</span></pre></td><td class="code"><pre><span class="line">		a&#x3D;rd.nextDouble();</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">8</span></pre></td><td class="code"><pre><span class="line">		System.out.print(&quot;请输入第二条边的长度：&quot;);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">9</span></pre></td><td class="code"><pre><span class="line">		b&#x3D;rd.nextDouble();</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">10</span></pre></td><td class="code"><pre><span class="line">		double c&#x3D;Math.sqrt(a*a+b*b);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">11</span></pre></td><td class="code"><pre><span class="line">		System.out.println(&quot;直角三角形的斜边是：&quot;+c);	</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">12</span></pre></td><td class="code"><pre><span class="line">	&#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">13</span></pre></td><td class="code"><pre><span class="line">&#125;</span></pre></td></tr></table></figure>
+<p><strong>我的结果</strong><br>输入4，5<br>输出6.4031242374328485</p>
 
     </div>
 </article>
@@ -378,17 +366,17 @@
 
                 
                 <li>
-                    <a href="/2019/12/01/%E7%BC%96%E7%A8%8B%E5%9F%BA%E7%A1%80/index.html#sidebar-tags" data-toggle="tab" id="tags-tab">热门标签</a>
+                    <a href="/2019/12/01/%E5%AE%9E%E8%AE%AD%E4%B8%80/index.html#sidebar-tags" data-toggle="tab" id="tags-tab">热门标签</a>
                 </li>
                 
                 
                 <li>
-                    <a href="/2019/12/01/%E7%BC%96%E7%A8%8B%E5%9F%BA%E7%A1%80/index.html#sidebar-friend-links" data-toggle="tab" id="friend-links-tab">友情链接</a>
+                    <a href="/2019/12/01/%E5%AE%9E%E8%AE%AD%E4%B8%80/index.html#sidebar-friend-links" data-toggle="tab" id="friend-links-tab">友情链接</a>
                 </li>
                 
                 
                 <li>
-                    <a href="/2019/12/01/%E7%BC%96%E7%A8%8B%E5%9F%BA%E7%A1%80/index.html#sidebar-links" data-toggle="tab" id="links-tab">个人链接</a>
+                    <a href="/2019/12/01/%E5%AE%9E%E8%AE%AD%E4%B8%80/index.html#sidebar-links" data-toggle="tab" id="links-tab">个人链接</a>
                 </li>
                 
             </ul>
@@ -396,9 +384,9 @@
                 
                 <div class="cloud-tags tab-pane nav bs-sidenav fade" id="sidebar-tags">
     
-    <a href="/tags/JAVA/" style="font-size: 12.718871410560132px;" class="tag-cloud-link">JAVA</a>
+    <a href="/tags/JAVA/" style="font-size: 16.792365516873623px;" class="tag-cloud-link">JAVA</a>
     
-    <a href="/tags/%E5%AE%9E%E8%AE%AD/" style="font-size: 13.45395574700456px;" class="tag-cloud-link">实训</a>
+    <a href="/tags/%E5%AE%9E%E8%AE%AD/" style="font-size: 12.811398443206057px;" class="tag-cloud-link">实训</a>
     
 </div>
                 
