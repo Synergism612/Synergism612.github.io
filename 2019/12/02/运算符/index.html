@@ -10,7 +10,7 @@
     
     
     
-    <title>archive_a | Synergism</title>
+    <title>运算符 | Synergism</title>
     <link href="http://yoursite.com" rel="prefetch" />
 
     <link rel="stylesheet" href="/css/bootstrap.min.css">
@@ -103,7 +103,7 @@
                 
                 
                 
-                <li class="current">
+                <li class="">
                     <a href="/archives">
                         <i class="fa fa-archive"></i>归档
                     </a>
@@ -174,19 +174,38 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-8 gal-right" id="mainstay">
-                    <article class="article well article-body" id="article-archive">
+                    
+<article class="article well article-body" id="article">
     <div class="breadcrumb">
         <i class="fa fa-home"></i>
         <a href="http://yoursite.com">Synergism</a>
         >
-        <span>归档</span>
+        <span>运算符</span>
     </div>
     <!-- 大型设备详细文章 -->
     <div class="hidden-xs">
         <div class="title-article">
             <h1>
-                <a href="/archives">归档</a>
+                <a href="/2019/12/02/%E8%BF%90%E7%AE%97%E7%AC%A6/">运算符</a>
             </h1>
+        </div>
+        <div class="tag-article">
+            
+            <span class="label label-gal">
+                <i class="fa fa-tags"></i>
+                
+                <a href="/tags/%E5%AD%A6%E4%B9%A0/">学习</a>
+                
+            </span>
+            
+            <span class="label label-gal">
+                <i class="fa fa-calendar"></i> 2019-12-02
+            </span>
+            
+            <span class="label label-gal">
+                <i class="fa fa-eye"></i>
+            </span>
+            
         </div>
     </div>
     <!-- 小型设备详细文章 -->
@@ -194,43 +213,50 @@
         <center>
             <div class="title-article">
                 <h4>
-                    <a href="/archives">归档</a>
+                    <a href="/2019/12/02/%E8%BF%90%E7%AE%97%E7%AC%A6/">运算符</a>
                 </h4>
             </div>
+            <p>
+                <i class="fa fa-calendar"></i> 2019-12-02
+            </p>
+            <p>
+                
+                <i class="fa fa-tags"></i>
+                
+                <a href="/tags/%E5%AD%A6%E4%B9%A0/">学习</a>
+                
+                
+                
+                <i class="fa fa-eye"></i>
+                
+            </p>
         </center>
     </div>
-    <div class="content-article" style="margin-top: 30px;">
-        
-        
-            <h1 style="font-size: 24px; margin-top: 40px;">2019年</h1>
-            
-        <div class="alert alert-info" style="font-size: 14px; line-height: 2; font-weight: bold;">
-            
-             
-             
-                        <a href="/2019/12/02/%E8%BF%90%E7%AE%97%E7%AC%A6/">运算符</a>
-                        <br>
-            
-             
-                        <a href="/2019/12/02/%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/">数据类型</a>
-                        <br>
-            
-             
-                        <a href="/2019/12/01/%E5%AE%9E%E8%AE%AD%E4%B8%80/">实训一</a>
-                        <br>
-            
-             
-                        <a href="/2019/12/01/%E7%BC%96%E7%A8%8B%E5%9F%BA%E7%A1%80/">编程基础</a>
-                        <br>
-            
-             
-                        <a href="/2019/12/01/%E8%AE%A4%E8%AF%86java/">认识java</a>
-                        <br>
-            
-                    </div>
-        
+    <div class="content-article">
+        <h1 id="表达式"><a href="#表达式" class="headerlink" title="表达式"></a>表达式</h1><p>一个有意义的式子<br>在表达式中，只允许出现小括号“（）”<br>表达式的结果的类型一定与表达式中精度最高的类型相同<br>两个数据不同类型时，JAVA中时无法运算的，需要进行转换,一般如下</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">精度：</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">byte→short(char)→int→long→float→double</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">低——————————————————→高</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">小范围向大范围转换，低精度向高精度转换</span></pre></td></tr></table></figure>
+<hr>
+<h1 id="优先级"><a href="#优先级" class="headerlink" title="优先级"></a>优先级</h1><p>所有运算符都存在优先级，优先级高的先进行运算<br>符号优先级相同时，优先计算左侧（永远的从左到右）<br><img src="/images/%E8%BF%90%E7%AE%97%E7%AC%A6%E4%BC%98%E5%85%88%E7%BA%A7.png" alt="alt"></p>
+<hr>
+<h1 id="算数运算符"><a href="#算数运算符" class="headerlink" title="算数运算符"></a>算数运算符</h1><p>1.加（+）减（-）乘（*）除（/）<br>四则运算的表达式与数学相同<br>注意“+”在字符串中的连接用法<br>2.取余（%）<br>a%b==a-(int)(a/b)*b<br>如：7%2=1      7%-2=1<br>取余结果的符号取决于被取余数<br>3.自增（++）自减（–）<br>有两种用法，前缀和后缀<br> “++n”的值永不等于“n++”但是n的值都等于n+1<br> ++n→”++n”=n+1;n=n+1;<br>n++→”n++”=n;n=n+1;<br>如：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">public class Synergism &#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">	public static void main(String[] args) &#123;	</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">	int n&#x3D;3 ;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">	System.out.println(n++);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line">			&#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line">&#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">7</span></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F;结果是3</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">8</span></pre></td><td class="code"><pre><span class="line">public class Synergism &#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">9</span></pre></td><td class="code"><pre><span class="line">	public static void main(String[] args) &#123;	</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">10</span></pre></td><td class="code"><pre><span class="line">	int n&#x3D;3 ;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">11</span></pre></td><td class="code"><pre><span class="line">	System.out.println(++n);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">12</span></pre></td><td class="code"><pre><span class="line">			&#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">13</span></pre></td><td class="code"><pre><span class="line">&#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">14</span></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F;结果是4</span></pre></td></tr></table></figure>
+<h2 id="记住”n-”永不等于”-n”"><a href="#记住”n-”永不等于”-n”" class="headerlink" title="记住”n++”永不等于”++n”"></a><strong>记住”n++”永不等于”++n”</strong></h2><h1 id="赋值运算符"><a href="#赋值运算符" class="headerlink" title="赋值运算符"></a>赋值运算符</h1><p>等于号（=）<br>它是一个双目运算符，优先级是最低的<br>作用是赋予变量值或者表达式的结果<br>可以重新赋值<br>可以和四则运算符一起组合<br>加等（+=）减等（-=）乘等（*=）除等（/=）<br>如：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">public class Synergism &#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">	public static void main(String[] args) &#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">		int x &#x3D; 5,y&#x3D;7;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">		y&#x3D;x+10;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line">		y+&#x3D;20;&#x2F;&#x2F;y+&#x3D;20→y&#x3D;y+20;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line">		System.out.println(y);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">7</span></pre></td><td class="code"><pre><span class="line">	&#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">8</span></pre></td><td class="code"><pre><span class="line">&#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">9</span></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F;结果是35</span></pre></td></tr></table></figure>
+<p>连续赋值<br>a=b=c=0(正确)<br>a=a+10=b（错误）</p>
+<hr>
+<h1 id="关系运算符"><a href="#关系运算符" class="headerlink" title="关系运算符"></a>关系运算符</h1><p>大于（&gt;）大于等于（&gt;=）小于（&lt;）小于等于（&lt;=）等于（==）不等于（！=）<br>注意：<br>等于号是两个“=”<br>该类运算符只会出现在布尔表达式中，结果必为布尔型<br>不能连续使用”2&gt;1&gt;5“（错误）</p>
+<hr>
+<h1 id="逻辑运算符"><a href="#逻辑运算符" class="headerlink" title="逻辑运算符"></a>逻辑运算符</h1><p>与（&amp;&amp;） 或（||）非（！）<br>&amp;&amp;和||为短路运算符<br>如：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">public class Synergism &#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">	public static void main(String[] args) &#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">		int a &#x3D; -1, b &#x3D; 4;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">		boolean k &#x3D; (++a &lt; 0) || !(b-- &lt;&#x3D; 0);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line">		System.out.println(k + &quot; &quot; + a + &quot; &quot; + b);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line">	&#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">7</span></pre></td><td class="code"><pre><span class="line">&#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">8</span></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F;结果是true 0 3</span></pre></td></tr></table></figure>
+<hr>
+<h1 id="条件运算符"><a href="#条件运算符" class="headerlink" title="条件运算符"></a>条件运算符</h1><p>格式：<br>变量 x= 布尔表达式1 ? 表达式2 : 表达式3<br>三目表达式<br>当布尔表达式1得出<br>     true 时等于表达式2<br>     false 时等于表达式3<br>如：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">public class Synergism &#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">	public static void main(String[] args) &#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">	int x,a&#x3D;5,b&#x3D;7;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">		x&#x3D;a&gt;b?a:b;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line">		System.out.println(x);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line">	&#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">7</span></pre></td><td class="code"><pre><span class="line">&#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">8</span></pre></td><td class="code"><pre><span class="line">结果是7</span></pre></td></tr></table></figure>
+<hr>
+
     </div>
 </article>
+
+
                 </div>
                 <aside class="col-md-4 gal-left" id="sidebar">
     <!-- 此为sidebar的搜索框, 非搜索结果页面 -->
@@ -372,17 +398,17 @@
 
                 
                 <li>
-                    <a href="/archives/2019/12/index.html#sidebar-tags" data-toggle="tab" id="tags-tab">热门标签</a>
+                    <a href="/2019/12/02/%E8%BF%90%E7%AE%97%E7%AC%A6/index.html#sidebar-tags" data-toggle="tab" id="tags-tab">热门标签</a>
                 </li>
                 
                 
                 <li>
-                    <a href="/archives/2019/12/index.html#sidebar-friend-links" data-toggle="tab" id="friend-links-tab">友情链接</a>
+                    <a href="/2019/12/02/%E8%BF%90%E7%AE%97%E7%AC%A6/index.html#sidebar-friend-links" data-toggle="tab" id="friend-links-tab">友情链接</a>
                 </li>
                 
                 
                 <li>
-                    <a href="/archives/2019/12/index.html#sidebar-links" data-toggle="tab" id="links-tab">个人链接</a>
+                    <a href="/2019/12/02/%E8%BF%90%E7%AE%97%E7%AC%A6/index.html#sidebar-links" data-toggle="tab" id="links-tab">个人链接</a>
                 </li>
                 
             </ul>
@@ -390,9 +416,9 @@
                 
                 <div class="cloud-tags tab-pane nav bs-sidenav fade" id="sidebar-tags">
     
-    <a href="/tags/%E5%AE%9E%E8%AE%AD/" style="font-size: 13.640293788039806px;" class="tag-cloud-link">实训</a>
+    <a href="/tags/%E5%AE%9E%E8%AE%AD/" style="font-size: 10.253514638804253px;" class="tag-cloud-link">实训</a>
     
-    <a href="/tags/%E5%AD%A6%E4%B9%A0/" style="font-size: 9.19722016022997px;" class="tag-cloud-link">学习</a>
+    <a href="/tags/%E5%AD%A6%E4%B9%A0/" style="font-size: 12.954578314043065px;" class="tag-cloud-link">学习</a>
     
 </div>
                 
