@@ -151,6 +151,10 @@
                             <a href="/tags/%E5%AD%A6%E4%B9%A0/">学习</a>
                         </li>
                         
+                        <li>
+                            <a href="/tags/%E7%BB%83%E4%B9%A0%E9%A2%98/">练习题</a>
+                        </li>
+                        
                         
                         
                     </ul>
@@ -238,8 +242,11 @@
 <hr>
 <h1 id="优先级"><a href="#优先级" class="headerlink" title="优先级"></a>优先级</h1><p>所有运算符都存在优先级，优先级高的先进行运算<br>符号优先级相同时，优先计算左侧（永远的从左到右）<br><img src="/images/%E8%BF%90%E7%AE%97%E7%AC%A6%E4%BC%98%E5%85%88%E7%BA%A7.png" alt="alt"></p>
 <hr>
-<h1 id="算数运算符"><a href="#算数运算符" class="headerlink" title="算数运算符"></a>算数运算符</h1><p>1.加（+）减（-）乘（*）除（/）<br>四则运算的表达式与数学相同<br>注意“+”在字符串中的连接用法<br>2.取余（%）<br>a%b==a-(int)(a/b)*b<br>如：7%2=1      7%-2=1<br>取余结果的符号取决于被取余数<br>3.自增（++）自减（–）<br>有两种用法，前缀和后缀<br> “++n”的值永不等于“n++”但是n的值都等于n+1<br> ++n→”++n”=n+1;n=n+1;<br>n++→”n++”=n;n=n+1;<br>如：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">public class Synergism &#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">	public static void main(String[] args) &#123;	</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">	int n&#x3D;3 ;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">	System.out.println(n++);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line">			&#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line">&#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">7</span></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F;结果是3</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">8</span></pre></td><td class="code"><pre><span class="line">public class Synergism &#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">9</span></pre></td><td class="code"><pre><span class="line">	public static void main(String[] args) &#123;	</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">10</span></pre></td><td class="code"><pre><span class="line">	int n&#x3D;3 ;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">11</span></pre></td><td class="code"><pre><span class="line">	System.out.println(++n);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">12</span></pre></td><td class="code"><pre><span class="line">			&#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">13</span></pre></td><td class="code"><pre><span class="line">&#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">14</span></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F;结果是4</span></pre></td></tr></table></figure>
+<h1 id="算数运算符"><a href="#算数运算符" class="headerlink" title="算数运算符"></a>算数运算符</h1><ol>
+<li>加（+）减（-）乘（*）除（/）<br>四则运算的表达式与数学相同<br>注意“+”在字符串中的连接用法</li>
+<li>取余（%）<br>a%b==a-(int)(a/b)*b<br>如：7%2=1      7%-2=1<br>取余结果的符号取决于被取余数</li>
+<li>自增（++）自减（–）<br>有两种用法，前缀和后缀<br>“++n”的值永不等于“n++”但是n的值都等于n+1<br>++n→”++n”=n+1;n=n+1;<br>n++→”n++”=n;n=n+1;<br>如：<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">public class Synergism &#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">	public static void main(String[] args) &#123;	</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">	int n&#x3D;3 ;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">	System.out.println(n++);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line">			&#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line">&#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">7</span></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F;结果是3</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">8</span></pre></td><td class="code"><pre><span class="line">public class Synergism &#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">9</span></pre></td><td class="code"><pre><span class="line">	public static void main(String[] args) &#123;	</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">10</span></pre></td><td class="code"><pre><span class="line">	int n&#x3D;3 ;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">11</span></pre></td><td class="code"><pre><span class="line">	System.out.println(++n);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">12</span></pre></td><td class="code"><pre><span class="line">			&#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">13</span></pre></td><td class="code"><pre><span class="line">&#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">14</span></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F;结果是4</span></pre></td></tr></table></figure></li>
+</ol>
 <h2 id="记住”n-”永不等于”-n”"><a href="#记住”n-”永不等于”-n”" class="headerlink" title="记住”n++”永不等于”++n”"></a><strong>记住”n++”永不等于”++n”</strong></h2><h1 id="赋值运算符"><a href="#赋值运算符" class="headerlink" title="赋值运算符"></a>赋值运算符</h1><p>等于号（=）<br>它是一个双目运算符，优先级是最低的<br>作用是赋予变量值或者表达式的结果<br>可以重新赋值<br>可以和四则运算符一起组合<br>加等（+=）减等（-=）乘等（*=）除等（/=）<br>如：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">public class Synergism &#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">	public static void main(String[] args) &#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">		int x &#x3D; 5,y&#x3D;7;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">		y&#x3D;x+10;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line">		y+&#x3D;20;&#x2F;&#x2F;y+&#x3D;20→y&#x3D;y+20;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line">		System.out.println(y);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">7</span></pre></td><td class="code"><pre><span class="line">	&#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">8</span></pre></td><td class="code"><pre><span class="line">&#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">9</span></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F;结果是35</span></pre></td></tr></table></figure>
 <p>连续赋值<br>a=b=c=0(正确)<br>a=a+10=b（错误）</p>
@@ -313,6 +320,12 @@
             
             <li class="list-group-item">
                 <span class="post-title">
+                    <a href="/2019/12/03/%E8%A1%A8%E8%BE%BE%E5%BC%8F%E7%BB%83%E4%B9%A0%E9%A2%98/">表达式练习题</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
                     <a href="/2019/12/02/%E8%BF%90%E7%AE%97%E7%AC%A6/">运算符</a>
                 </span>
             </li>
@@ -365,7 +378,13 @@
             
             <li class="list-group-item">
                 <span class="post-title">
-                    <a href="/2019/12/02/%E8%BF%90%E7%AE%97%E7%AC%A6/">运算符</a>
+                    <a href="/2019/12/02/%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/">数据类型</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2019/12/03/%E8%A1%A8%E8%BE%BE%E5%BC%8F%E7%BB%83%E4%B9%A0%E9%A2%98/">表达式练习题</a>
                 </span>
             </li>
             
@@ -377,13 +396,13 @@
             
             <li class="list-group-item">
                 <span class="post-title">
-                    <a href="/2019/12/02/%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/">数据类型</a>
+                    <a href="/2019/12/01/%E8%AE%A4%E8%AF%86java/">认识java</a>
                 </span>
             </li>
             
             <li class="list-group-item">
                 <span class="post-title">
-                    <a href="/2019/12/01/%E8%AE%A4%E8%AF%86java/">认识java</a>
+                    <a href="/2019/12/02/%E8%BF%90%E7%AE%97%E7%AC%A6/">运算符</a>
                 </span>
             </li>
             
@@ -416,9 +435,11 @@
                 
                 <div class="cloud-tags tab-pane nav bs-sidenav fade" id="sidebar-tags">
     
-    <a href="/tags/%E5%AE%9E%E8%AE%AD/" style="font-size: 10.253514638804253px;" class="tag-cloud-link">实训</a>
+    <a href="/tags/%E5%AE%9E%E8%AE%AD/" style="font-size: 11.522298880170688px;" class="tag-cloud-link">实训</a>
     
-    <a href="/tags/%E5%AD%A6%E4%B9%A0/" style="font-size: 12.954578314043065px;" class="tag-cloud-link">学习</a>
+    <a href="/tags/%E5%AD%A6%E4%B9%A0/" style="font-size: 9.55873464451453px;" class="tag-cloud-link">学习</a>
+    
+    <a href="/tags/%E7%BB%83%E4%B9%A0%E9%A2%98/" style="font-size: 16.325473584074814px;" class="tag-cloud-link">练习题</a>
     
 </div>
                 
