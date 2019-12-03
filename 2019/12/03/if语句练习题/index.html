@@ -10,7 +10,7 @@
     
     
     
-    <title>实训一 | Synergism</title>
+    <title>if语句练习题 | Synergism</title>
     <link href="http://yoursite.com" rel="prefetch" />
 
     <link rel="stylesheet" href="/css/bootstrap.min.css">
@@ -184,13 +184,13 @@
         <i class="fa fa-home"></i>
         <a href="http://yoursite.com">Synergism</a>
         >
-        <span>实训一</span>
+        <span>if语句练习题</span>
     </div>
     <!-- 大型设备详细文章 -->
     <div class="hidden-xs">
         <div class="title-article">
             <h1>
-                <a href="/2019/12/01/%E5%AE%9E%E8%AE%AD%E4%B8%80/">实训一</a>
+                <a href="/2019/12/03/if%E8%AF%AD%E5%8F%A5%E7%BB%83%E4%B9%A0%E9%A2%98/">if语句练习题</a>
             </h1>
         </div>
         <div class="tag-article">
@@ -198,12 +198,12 @@
             <span class="label label-gal">
                 <i class="fa fa-tags"></i>
                 
-                <a href="/tags/%E5%AE%9E%E8%AE%AD/">实训</a>
+                <a href="/tags/%E7%BB%83%E4%B9%A0%E9%A2%98/">练习题</a>
                 
             </span>
             
             <span class="label label-gal">
-                <i class="fa fa-calendar"></i> 2019-12-01
+                <i class="fa fa-calendar"></i> 2019-12-03
             </span>
             
             <span class="label label-gal">
@@ -217,17 +217,17 @@
         <center>
             <div class="title-article">
                 <h4>
-                    <a href="/2019/12/01/%E5%AE%9E%E8%AE%AD%E4%B8%80/">实训一</a>
+                    <a href="/2019/12/03/if%E8%AF%AD%E5%8F%A5%E7%BB%83%E4%B9%A0%E9%A2%98/">if语句练习题</a>
                 </h4>
             </div>
             <p>
-                <i class="fa fa-calendar"></i> 2019-12-01
+                <i class="fa fa-calendar"></i> 2019-12-03
             </p>
             <p>
                 
                 <i class="fa fa-tags"></i>
                 
-                <a href="/tags/%E5%AE%9E%E8%AE%AD/">实训</a>
+                <a href="/tags/%E7%BB%83%E4%B9%A0%E9%A2%98/">练习题</a>
                 
                 
                 
@@ -237,17 +237,197 @@
         </center>
     </div>
     <div class="content-article">
-        <h1 id="1、编写一个程序，指定三门课程的成绩，计算平均成绩并输出。"><a href="#1、编写一个程序，指定三门课程的成绩，计算平均成绩并输出。" class="headerlink" title="1、编写一个程序，指定三门课程的成绩，计算平均成绩并输出。"></a>1、编写一个程序，指定三门课程的成绩，计算平均成绩并输出。</h1><p><strong>我的程序</strong></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">public class Synergism &#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">	public static void main(String[] args) &#123;		</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">		int math,eng,comp;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">		int aterage;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line">		math&#x3D;99;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line">		eng&#x3D;90;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">7</span></pre></td><td class="code"><pre><span class="line">		comp&#x3D;95;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">8</span></pre></td><td class="code"><pre><span class="line">		int average &#x3D; (math + eng + comp)&#x2F;3;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">9</span></pre></td><td class="code"><pre><span class="line">		System.out.println(&quot;数学成绩&#x3D;&quot;+math);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">10</span></pre></td><td class="code"><pre><span class="line">		System.out.println(&quot;英语成绩&#x3D;&quot;+eng);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">11</span></pre></td><td class="code"><pre><span class="line">		System.out.println(&quot;计算机成绩&#x3D;&quot;+comp);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">12</span></pre></td><td class="code"><pre><span class="line">		System.out.println(&quot;平均成绩&#x3D;&quot;+average);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">13</span></pre></td><td class="code"><pre><span class="line">	&#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">14</span></pre></td><td class="code"><pre><span class="line">&#125;</span></pre></td></tr></table></figure>
-<p><strong>我的结果</strong><br>数学成绩=99<br>英语成绩=90<br>计算机成绩=95<br>平均成绩=94</p>
+        <ol>
+<li><p>输入一个字符, 判断是小写字母、大写字母、数字字符、特殊字符</p>
+<pre><code>//import java.util.Scanner;
+
+public static void main(String[] args) {
+char  ch;
+Scanner reader = new Scanner(System.in);
+
+System.out.print(&quot;请输入一个字符: &quot;);
+ch = reader.next().charAt(0);      // 读入一个字符
+
+if (ch &gt;= &apos;a&apos; &amp;&amp; ch &lt;= &apos;z&apos;) {
+    System.out.println(ch + &quot;是一个小写字母&quot;);
+} 
+else if (ch &gt;= &apos;A&apos; &amp;&amp; ch &lt;= &apos;Z&apos;) {
+    System.out.println(ch + &quot;是一个大写字母&quot;);
+} 
+else if (ch &gt;= &apos;0&apos; &amp;&amp; ch &lt;= &apos;9&apos;) {
+    System.out.println(ch + &quot;是一个数字字符&quot;);
+}
+ else {
+    System.out.println(ch + &quot;是一个特殊字符&quot;);
+    }
+}</code></pre></li>
+<li><p>求小写字母在小写字母表中的序号，若不是小写字母，则序号为0。</p>
+<pre><code>//import java.util.Scanner;
+
+public static void main(String[] args) {
+char  letter;
+int  index = 0;    // 序号
+    Scanner reader = new Scanner(System.in);
+    System.out.print(&quot;请输入一个小写字母: &quot;);
+    letter = reader.next().charAt(0); // 读入一个字符
+    if (letter &gt;= &apos;a&apos; &amp;&amp; letter &lt;= &apos;z&apos;) {
+        index = letter - &apos;a&apos; + 1;
+    }
+    System.out.println(letter + &quot;的序号是&quot; + index);
+}</code></pre></li>
+<li><p>输入一个年份, 判闰年。</p>
+<pre><code>//import java.util.Scanner;
+
+public static void main(String[] args) {
+int  year;
+    Scanner reader = new Scanner(System.in);
+    System.out.print(&quot;请输入一个年份: &quot;);
+    year = reader.nextInt();
+if (year % 4 == 0 &amp;&amp; year % 100 != 0 || year % 400 == 0) {
+    System.out.println(year + &quot;年是闰年&quot;);
+    } 
+else {
+    System.out.println(year + &quot;年是平年&quot;);
+    }
+} </code></pre></li>
+<li><p>求三个整数的最大值。</p>
+</li>
+<li><p>算法一：</p>
+<pre><code>//import java.util.Scanner;
+
+public static void main(String[] args) {
+int  a, b, c;
+int  max;
+    Scanner reader = new Scanner(System.in);
+    System.out.println(&quot;请输入三个整数，中间用空格隔开&quot;);
+    a = reader.nextInt();
+    b = reader.nextInt();
+    c = reader.nextInt();    
+if (a &gt; b) {
+    if (a &gt; c) {
+        max = a;
+        } 
+    else {
+        max = c;
+        }
+     else {
+    if (b &gt; c) {
+        max = b;
+        } 
+    else {
+        max = c;
+        }
+    }
+System.out.println(&quot;max = &quot; + max);
+}</code></pre></li>
+<li><p>算法二：</p>
+<pre><code>//import java.util.Scanner;
+
+public static void main(String[] args) {
+int  a, b, c;
+int  max = 0;
+    Scanner reader = new Scanner(System.in);
+    System.out.println(&quot;请输入三个整数，中间用空格隔开&quot;);
+    a = reader.nextInt();
+    b = reader.nextInt();
+    c = reader.nextInt();    
+if (a &gt;= b &amp;&amp; a &gt;= c) {
+    max = a;
+    }
+if (b &gt;= a &amp;&amp; b &gt;= c) {
+    max = b;
+    }
+if (c &gt;= a &amp;&amp; c &gt;= b) {
+    max = c;
+    }
+System.out.println(&quot;max = &quot; + max);
+}</code></pre></li>
+</ol>
+<ol start="3">
+<li><p>算法三：</p>
+<pre><code>//import java.util.Scanner;
+
+public static void main(String[] args) {
+int  a, b, c;
+int  max;
+Scanner reader = new Scanner(System.in);
+
+System.out.println(&quot;请输入三个整数，中间用空格隔开&quot;);
+a = reader.nextInt();
+b = reader.nextInt();
+c = reader.nextInt();
+
+max = a;
+if (b &gt; max) {
+    max = b;
+    }
+if (c &gt; max) {
+    max = c;
+    }
+System.out.println(&quot;max = &quot; + max);
+}</code></pre></li>
+</ol>
+<ol start="6">
+<li><p>输入三个整数，按从大到小的顺序输出。</p>
+</li>
+<li><p>算法一：</p>
+<pre><code>//import java.util.Scanner;
+
+public static void main(String[] args) {
+int  a, b, c;
+int  max;
+Scanner reader = new Scanner(System.in);
+System.out.println(&quot;请输入三个整数，中间用空格隔开&quot;);
+    a = reader.nextInt();
+    b = reader.nextInt();
+    c = reader.nextInt();        
+if (a &gt; b) {
+    if (b &gt; c) {
+        System.out.printf(&quot;%d, %d, %d\n&quot;, a, b, c);
+    } 
+    else if (a &gt; c) {
+        System.out.printf(&quot;%d, %d, %d\n&quot;, a, c, b);
+    } 
+    else {
+        System.out.printf(&quot;%d, %d, %d\n&quot;, c, a, b);
+    }
+}
+ else {
+    if (a &gt; c) {
+        System.out.printf(&quot;%d, %d, %d\n&quot;, b, a, c);
+    } 
+    else if (b &gt; c) {
+        System.out.printf(&quot;%d, %d, %d\n&quot;, b, c, a);
+    } 
+    else {
+    System.out.printf(&quot;%d, %d, %d\n&quot;, c, b, a);
+        }
+    }
+}</code></pre></li>
+<li><p>算法二：</p>
+<pre><code>//import java.util.Scanner;
+
+public static void main(String[] args) {
+int  a, b, c;
+int  t;
+Scanner reader = new Scanner(System.in);
+System.out.println(&quot;请输入三个整数，中间用空格隔开&quot;);
+    a = reader.nextInt();
+    b = reader.nextInt();
+    c = reader.nextInt();
+if (a &lt; b){ t = a; a = b; b = t; }
+if (a &lt; c){ t = a; a = c; c = t; }
+if (b &lt; c){ t = b; b = c; c = t; }
+
+System.out.printf(&quot;%d, %d, %d\n&quot;, a, b, c);
+}</code></pre></li>
+</ol>
 <hr>
-<h1 id="2、编一个程序，定义常量Pi-3-14159265-从键盘上输入半径r-求出圆的面积。"><a href="#2、编一个程序，定义常量Pi-3-14159265-从键盘上输入半径r-求出圆的面积。" class="headerlink" title="2、编一个程序，定义常量Pi=3.14159265,从键盘上输入半径r,求出圆的面积。"></a>2、编一个程序，定义常量Pi=3.14159265,从键盘上输入半径r,求出圆的面积。</h1><p><strong>我的程序</strong></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">import java.util.*;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">public class Synergism &#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">	public static void main(String[] args) &#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">		final double pi&#x3D;3.14159;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line">		double r,area;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line">		Scanner rd&#x3D; new Scanner(System.in);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">7</span></pre></td><td class="code"><pre><span class="line">		System.out.print(&quot;请输入圆的半径：&quot;);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">8</span></pre></td><td class="code"><pre><span class="line">		r&#x3D;rd.nextDouble();</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">9</span></pre></td><td class="code"><pre><span class="line">		area&#x3D;pi*r*r;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">10</span></pre></td><td class="code"><pre><span class="line">		System.out.println(&quot;半径&#x3D;&quot;+r+&quot;的圆面积&#x3D;&quot;+area);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">11</span></pre></td><td class="code"><pre><span class="line">	&#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">12</span></pre></td><td class="code"><pre><span class="line">&#125;</span></pre></td></tr></table></figure>
-<p><strong>我的结果</strong><br>输入20<br>输出圆的面积为1256.636</p>
+<ul>
+<li>根据成绩输出相应等级。(这道题我不只运用了if)<br>需求规格说明：<br>1、成绩 —— 1个实数<br>2、对成绩进行四舍五入后，只保留整数部分<br>  （以下所说的成绩均表示整数成绩）<br>3、当 90 &lt;= 成绩 &lt;= 100 时，等级为 A<br>4、当 80 &lt;= 成绩 &lt;  90  时，等级为 B<br>5、当 70 &lt;= 成绩 &lt;  80  时，等级为 C<br>6、当 60 &lt;= 成绩 &lt;  70  时，等级为 D<br>7、当  0 &lt;= 成绩 &lt;  60  时，等级为 E<br>8、当 60 &lt;= 成绩 &lt;= 100 时，<br>  若成绩以 0 或 1 结尾，在字母等级后加‘-’；<br>  若成绩以 8 或 9 结尾，在字母等级后加‘+’；<br>  若   成绩 = 100，     在字母等级后加‘+’。<br>9、当 成绩 &lt; 60 时，<br>  若   成绩 &lt;   20，   在字母等级后加‘-’；<br>  若   成绩 &gt;=  40，   在字母等级后加‘+’。<br>10、若输入成绩 &lt; 0.0 或 &gt; 100.0时，输出 ”Input  score  error!”<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F;import java.util.Scanner;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">public class Synergism &#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">public static void main(String[] args) &#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">	Scanner reader &#x3D; new Scanner (System.in);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line">System.out.println(&quot;请输入成绩：&quot;);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line">double y &#x3D; reader.nextDouble();</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">7</span></pre></td><td class="code"><pre><span class="line">	char grad;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">8</span></pre></td><td class="code"><pre><span class="line">	int x &#x3D; (int)(y+0.5);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">9</span></pre></td><td class="code"><pre><span class="line">	switch (x&#x2F;10) &#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">10</span></pre></td><td class="code"><pre><span class="line">		case 6 : grad &#x3D; &#39;D&#39;;break;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">11</span></pre></td><td class="code"><pre><span class="line">		case 7 : grad &#x3D; &#39;C&#39;;break;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">12</span></pre></td><td class="code"><pre><span class="line">		case 8 : grad &#x3D; &#39;B&#39;;break;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">13</span></pre></td><td class="code"><pre><span class="line">		case 9 : grad &#x3D; &#39;A&#39;;break;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">14</span></pre></td><td class="code"><pre><span class="line">		case 10 : grad &#x3D; &#39;A&#39;;break;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">15</span></pre></td><td class="code"><pre><span class="line">		default : grad &#x3D; &#39;E&#39;;break;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">16</span></pre></td><td class="code"><pre><span class="line">		&#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">17</span></pre></td><td class="code"><pre><span class="line">System.out.print(&quot;成绩等级是：&quot;+grad);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">18</span></pre></td><td class="code"><pre><span class="line">	int z;&#x2F;&#x2F;区别100</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">19</span></pre></td><td class="code"><pre><span class="line">	if (x&lt;100) &#123; z &#x3D; x;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">20</span></pre></td><td class="code"><pre><span class="line">		switch (z%10) &#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">21</span></pre></td><td class="code"><pre><span class="line">			case 0:System.out.println(&quot;-&quot;);break;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">22</span></pre></td><td class="code"><pre><span class="line">			case 1:System.out.println(&quot;-&quot;);break;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">23</span></pre></td><td class="code"><pre><span class="line">			case 8:System.out.println(&quot;+&quot;);break;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">24</span></pre></td><td class="code"><pre><span class="line">			case 9:System.out.println(&quot;+&quot;);break;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">25</span></pre></td><td class="code"><pre><span class="line">			&#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">26</span></pre></td><td class="code"><pre><span class="line">		&#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">27</span></pre></td><td class="code"><pre><span class="line">	else System.out.println(&quot;+&quot;);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">28</span></pre></td><td class="code"><pre><span class="line">	&#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">29</span></pre></td><td class="code"><pre><span class="line">&#125;</span></pre></td></tr></table></figure>
+</li>
+</ul>
 <hr>
-<h1 id="3、请输入两个double型的数作为直角三角形的两条直角边长，然后根据勾股定理计算出斜边长。"><a href="#3、请输入两个double型的数作为直角三角形的两条直角边长，然后根据勾股定理计算出斜边长。" class="headerlink" title="3、请输入两个double型的数作为直角三角形的两条直角边长，然后根据勾股定理计算出斜边长。"></a>3、请输入两个double型的数作为直角三角形的两条直角边长，然后根据勾股定理计算出斜边长。</h1><p><strong>我的程序</strong></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">import java.util.*;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">public class Synergism &#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">	public static void main(String[] args) &#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">		double a,b;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line">		Scanner rd&#x3D; new Scanner(System.in);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line">		System.out.print(&quot;请输入第一条边的长度：&quot;);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">7</span></pre></td><td class="code"><pre><span class="line">		a&#x3D;rd.nextDouble();</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">8</span></pre></td><td class="code"><pre><span class="line">		System.out.print(&quot;请输入第二条边的长度：&quot;);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">9</span></pre></td><td class="code"><pre><span class="line">		b&#x3D;rd.nextDouble();</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">10</span></pre></td><td class="code"><pre><span class="line">		double c&#x3D;Math.sqrt(a*a+b*b);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">11</span></pre></td><td class="code"><pre><span class="line">		System.out.println(&quot;直角三角形的斜边是：&quot;+c);	</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">12</span></pre></td><td class="code"><pre><span class="line">	&#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">13</span></pre></td><td class="code"><pre><span class="line">&#125;</span></pre></td></tr></table></figure>
-<p><strong>我的结果</strong><br>输入4，5<br>输出6.4031242374328485</p>
 
     </div>
 </article>
@@ -430,17 +610,17 @@
 
                 
                 <li>
-                    <a href="/2019/12/01/%E5%AE%9E%E8%AE%AD%E4%B8%80/index.html#sidebar-tags" data-toggle="tab" id="tags-tab">热门标签</a>
+                    <a href="/2019/12/03/if%E8%AF%AD%E5%8F%A5%E7%BB%83%E4%B9%A0%E9%A2%98/index.html#sidebar-tags" data-toggle="tab" id="tags-tab">热门标签</a>
                 </li>
                 
                 
                 <li>
-                    <a href="/2019/12/01/%E5%AE%9E%E8%AE%AD%E4%B8%80/index.html#sidebar-friend-links" data-toggle="tab" id="friend-links-tab">友情链接</a>
+                    <a href="/2019/12/03/if%E8%AF%AD%E5%8F%A5%E7%BB%83%E4%B9%A0%E9%A2%98/index.html#sidebar-friend-links" data-toggle="tab" id="friend-links-tab">友情链接</a>
                 </li>
                 
                 
                 <li>
-                    <a href="/2019/12/01/%E5%AE%9E%E8%AE%AD%E4%B8%80/index.html#sidebar-links" data-toggle="tab" id="links-tab">个人链接</a>
+                    <a href="/2019/12/03/if%E8%AF%AD%E5%8F%A5%E7%BB%83%E4%B9%A0%E9%A2%98/index.html#sidebar-links" data-toggle="tab" id="links-tab">个人链接</a>
                 </li>
                 
             </ul>
@@ -448,11 +628,11 @@
                 
                 <div class="cloud-tags tab-pane nav bs-sidenav fade" id="sidebar-tags">
     
-    <a href="/tags/%E7%BB%83%E4%B9%A0%E9%A2%98/" style="font-size: 12.895138668142128px;" class="tag-cloud-link">练习题</a>
+    <a href="/tags/%E7%BB%83%E4%B9%A0%E9%A2%98/" style="font-size: 14.230394483652251px;" class="tag-cloud-link">练习题</a>
     
-    <a href="/tags/%E5%AE%9E%E8%AE%AD/" style="font-size: 12.233335936394615px;" class="tag-cloud-link">实训</a>
+    <a href="/tags/%E5%AE%9E%E8%AE%AD/" style="font-size: 18.584201581391216px;" class="tag-cloud-link">实训</a>
     
-    <a href="/tags/%E5%AD%A6%E4%B9%A0/" style="font-size: 8.08957748745491px;" class="tag-cloud-link">学习</a>
+    <a href="/tags/%E5%AD%A6%E4%B9%A0/" style="font-size: 14.979486862770255px;" class="tag-cloud-link">学习</a>
     
 </div>
                 
