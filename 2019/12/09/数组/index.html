@@ -10,7 +10,7 @@
     
     
     
-    <title>tags: 实训 | Synergism</title>
+    <title>数组 | Synergism</title>
     <link href="http://yoursite.com" rel="prefetch" />
 
     <link rel="stylesheet" href="/css/bootstrap.min.css">
@@ -148,10 +148,6 @@
                         </li>
                         
                         <li>
-                            <a href="/tags/%E5%AE%9E%E8%AE%AD/">实训</a>
-                        </li>
-                        
-                        <li>
                             <a href="/tags/%E5%AD%A6%E4%B9%A0/">学习</a>
                         </li>
                         
@@ -178,19 +174,38 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-8 gal-right" id="mainstay">
-                    <article class="article well article-body" id="article-tag">
+                    
+<article class="article well article-body" id="article">
     <div class="breadcrumb">
         <i class="fa fa-home"></i>
         <a href="http://yoursite.com">Synergism</a>
         >
-        <span>标签</span>
+        <span>数组</span>
     </div>
     <!-- 大型设备详细文章 -->
     <div class="hidden-xs">
         <div class="title-article">
             <h1>
-                <a href="/tags/%E5%AE%9E%E8%AE%AD/index.html">实训</a>
+                <a href="/2019/12/09/%E6%95%B0%E7%BB%84/">数组</a>
             </h1>
+        </div>
+        <div class="tag-article">
+            
+            <span class="label label-gal">
+                <i class="fa fa-tags"></i>
+                
+                <a href="/tags/%E5%AD%A6%E4%B9%A0/">学习</a>
+                
+            </span>
+            
+            <span class="label label-gal">
+                <i class="fa fa-calendar"></i> 2019-12-09
+            </span>
+            
+            <span class="label label-gal">
+                <i class="fa fa-eye"></i>
+            </span>
+            
         </div>
     </div>
     <!-- 小型设备详细文章 -->
@@ -198,21 +213,35 @@
         <center>
             <div class="title-article">
                 <h4>
-                    <a href="/tags/%E5%AE%9E%E8%AE%AD/index.html">实训</a>
+                    <a href="/2019/12/09/%E6%95%B0%E7%BB%84/">数组</a>
                 </h4>
             </div>
+            <p>
+                <i class="fa fa-calendar"></i> 2019-12-09
+            </p>
+            <p>
+                
+                <i class="fa fa-tags"></i>
+                
+                <a href="/tags/%E5%AD%A6%E4%B9%A0/">学习</a>
+                
+                
+                
+                <i class="fa fa-eye"></i>
+                
+            </p>
         </center>
     </div>
-    <div class="content-article" style="margin-top: 30px;">
-        <div class="alert alert-info" style="font-size: 14px; line-height: 2; font-weight: bold;">
-            
-            <a href="/2019/12/01/%E5%AE%9E%E8%AE%AD%E4%B8%80/">实训一</a>
-            <br>
-            
-            
-        </div>
+    <div class="content-article">
+        <p>数组是一个<strong>对象</strong><br>数组对象含有属性（length长度）<br>每个数组都有标识（名字）称为“引用”<br>一个数组可以有多个引用<br>数组的每一个元素都可以用 a[n]（n&lt;length）来表示<br><img src="/images/%E6%95%B0%E7%BB%84.png" alt="alt"><br>一维数组的声明<br>        int [] a;<br>        或者int a [];<br>注意：<br>        int [] a,b;此时声明了两个数组<br>        int a[],b;此时只声明了a这个数组，而b是一个变量<br>以为数组的创建<br>        new 类型 []//必须先声明后创建<br>还可以简洁一点，同时声明和创建<br>        int [] a = new int [5];<br>        int [] a = new int []{1,2,3,4,5}<br>没有定义数组内容时，数组为初始值，一般的，为数组赋值是用for语句<br>如：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">int a [] &#x3D; new int(5);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">for(int i &#x3D; 0; i&lt;a.length;i++)&#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">a[i] &#x3D; i+1;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">&#125;</span></pre></td></tr></table></figure>
+<p>这样这个数组就会变成1，2，3，4，5</p>
+<p>数组的嵌套成为了<strong>二维数组</strong><br>二维数组的声明创建<br>        int [] [] a = new int [3] [4];<br>前一个中括号中表示a.length  (a中的元素数)<br>后一个中括号中表示 a[i].length  (a中元素中的元素数)<br>在JAVA中，可以任意定义元素数<br><img src="/images/%E4%BA%8C%E7%BB%B4%E6%95%B0%E7%BB%84.png" alt="alt"></p>
+
     </div>
 </article>
+
+
                 </div>
                 <aside class="col-md-4 gal-left" id="sidebar">
     <!-- 此为sidebar的搜索框, 非搜索结果页面 -->
@@ -269,6 +298,12 @@
             
             <li class="list-group-item">
                 <span class="post-title">
+                    <a href="/2019/12/09/%E6%95%B0%E7%BB%84/">数组</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
                     <a href="/2019/12/07/for%E8%AF%AD%E5%8F%A5%E7%BB%83%E4%B9%A0%E9%A2%98/">for语句练习题</a>
                 </span>
             </li>
@@ -306,12 +341,6 @@
             <li class="list-group-item">
                 <span class="post-title">
                     <a href="/2019/12/02/%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/">数据类型</a>
-                </span>
-            </li>
-            
-            <li class="list-group-item">
-                <span class="post-title">
-                    <a href="/2019/12/01/%E5%AE%9E%E8%AE%AD%E4%B8%80/">实训一</a>
                 </span>
             </li>
             
@@ -357,13 +386,7 @@
             
             <li class="list-group-item">
                 <span class="post-title">
-                    <a href="/2019/12/01/%E5%AE%9E%E8%AE%AD%E4%B8%80/">实训一</a>
-                </span>
-            </li>
-            
-            <li class="list-group-item">
-                <span class="post-title">
-                    <a href="/2019/12/03/%E8%AF%AD%E5%8F%A5/">语句</a>
+                    <a href="/2019/12/09/%E6%95%B0%E7%BB%84/">数组</a>
                 </span>
             </li>
             
@@ -375,13 +398,13 @@
             
             <li class="list-group-item">
                 <span class="post-title">
-                    <a href="/2019/12/02/%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/">数据类型</a>
+                    <a href="/2019/12/03/%E8%A1%A8%E8%BE%BE%E5%BC%8F%E7%BB%83%E4%B9%A0%E9%A2%98/">表达式练习题</a>
                 </span>
             </li>
             
             <li class="list-group-item">
                 <span class="post-title">
-                    <a href="/2019/12/02/%E8%BF%90%E7%AE%97%E7%AC%A6/">运算符</a>
+                    <a href="/2019/12/02/%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/">数据类型</a>
                 </span>
             </li>
             
@@ -393,13 +416,19 @@
             
             <li class="list-group-item">
                 <span class="post-title">
-                    <a href="/2019/12/03/%E8%A1%A8%E8%BE%BE%E5%BC%8F%E7%BB%83%E4%B9%A0%E9%A2%98/">表达式练习题</a>
+                    <a href="/2019/12/03/%E8%AF%AD%E5%8F%A5/">语句</a>
                 </span>
             </li>
             
             <li class="list-group-item">
                 <span class="post-title">
                     <a href="/2019/12/01/%E8%AE%A4%E8%AF%86java/">认识java</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2019/12/02/%E8%BF%90%E7%AE%97%E7%AC%A6/">运算符</a>
                 </span>
             </li>
             
@@ -414,17 +443,17 @@
 
                 
                 <li>
-                    <a href="/tags/%E5%AE%9E%E8%AE%AD/index.html#sidebar-tags" data-toggle="tab" id="tags-tab">热门标签</a>
+                    <a href="/2019/12/09/%E6%95%B0%E7%BB%84/index.html#sidebar-tags" data-toggle="tab" id="tags-tab">热门标签</a>
                 </li>
                 
                 
                 <li>
-                    <a href="/tags/%E5%AE%9E%E8%AE%AD/index.html#sidebar-friend-links" data-toggle="tab" id="friend-links-tab">友情链接</a>
+                    <a href="/2019/12/09/%E6%95%B0%E7%BB%84/index.html#sidebar-friend-links" data-toggle="tab" id="friend-links-tab">友情链接</a>
                 </li>
                 
                 
                 <li>
-                    <a href="/tags/%E5%AE%9E%E8%AE%AD/index.html#sidebar-links" data-toggle="tab" id="links-tab">个人链接</a>
+                    <a href="/2019/12/09/%E6%95%B0%E7%BB%84/index.html#sidebar-links" data-toggle="tab" id="links-tab">个人链接</a>
                 </li>
                 
             </ul>
@@ -432,11 +461,9 @@
                 
                 <div class="cloud-tags tab-pane nav bs-sidenav fade" id="sidebar-tags">
     
-    <a href="/tags/%E7%BB%83%E4%B9%A0%E9%A2%98/" style="font-size: 9.40727624262907px;" class="tag-cloud-link">练习题</a>
+    <a href="/tags/%E7%BB%83%E4%B9%A0%E9%A2%98/" style="font-size: 17.157591322244468px;" class="tag-cloud-link">练习题</a>
     
-    <a href="/tags/%E5%AE%9E%E8%AE%AD/" style="font-size: 9.286021163770277px;" class="tag-cloud-link">实训</a>
-    
-    <a href="/tags/%E5%AD%A6%E4%B9%A0/" style="font-size: 10.162095312722368px;" class="tag-cloud-link">学习</a>
+    <a href="/tags/%E5%AD%A6%E4%B9%A0/" style="font-size: 14.77347978876563px;" class="tag-cloud-link">学习</a>
     
 </div>
                 
