@@ -10,7 +10,7 @@
     
     
     
-    <title>编程基础 | Synergism</title>
+    <title>函数 | Synergism</title>
     <link href="http://yoursite.com" rel="prefetch" />
 
     <link rel="stylesheet" href="/css/bootstrap.min.css">
@@ -180,13 +180,13 @@
         <i class="fa fa-home"></i>
         <a href="http://yoursite.com">Synergism</a>
         >
-        <span>编程基础</span>
+        <span>函数</span>
     </div>
     <!-- 大型设备详细文章 -->
     <div class="hidden-xs">
         <div class="title-article">
             <h1>
-                <a href="/2019/12/01/%E7%BC%96%E7%A8%8B%E5%9F%BA%E7%A1%80/">编程基础</a>
+                <a href="/2019/12/10/%E5%87%BD%E6%95%B0/">函数</a>
             </h1>
         </div>
         <div class="tag-article">
@@ -199,7 +199,7 @@
             </span>
             
             <span class="label label-gal">
-                <i class="fa fa-calendar"></i> 2019-12-01
+                <i class="fa fa-calendar"></i> 2019-12-10
             </span>
             
             <span class="label label-gal">
@@ -213,11 +213,11 @@
         <center>
             <div class="title-article">
                 <h4>
-                    <a href="/2019/12/01/%E7%BC%96%E7%A8%8B%E5%9F%BA%E7%A1%80/">编程基础</a>
+                    <a href="/2019/12/10/%E5%87%BD%E6%95%B0/">函数</a>
                 </h4>
             </div>
             <p>
-                <i class="fa fa-calendar"></i> 2019-12-01
+                <i class="fa fa-calendar"></i> 2019-12-10
             </p>
             <p>
                 
@@ -233,29 +233,8 @@
         </center>
     </div>
     <div class="content-article">
-        <h1 id="概述"><a href="#概述" class="headerlink" title="概述"></a><strong>概述</strong></h1><hr>
-<h2 id="字符集"><a href="#字符集" class="headerlink" title="字符集"></a>字符集</h2><p>采用16位的Unicode字符集，共包括65536个字符。<br>前128个字符与ASCII字符集相同，包括汉字、日文、希腊字母等。</p>
-<hr>
-<h2 id="标识符"><a href="#标识符" class="headerlink" title="标识符"></a>标识符</h2><p>一切名字的总称<br>1.组成：字母、数字、下划线、$<br>2.非数字打头，长度不限<br>3.不能是关键字<br>4.区别大小写</p>
-<hr>
-<h2 id="关键字"><a href="#关键字" class="headerlink" title="关键字"></a>关键字</h2><p>也称保留字<br>具有特定还以的单词（全部由小写英文字母组成）<br>JIAVA中总共有51个关键字<br><img src="/images/%E5%85%B3%E9%94%AE%E5%AD%97.png" alt="alt"></p>
-<hr>
-<h2 id="注释"><a href="#注释" class="headerlink" title="注释"></a>注释</h2><p>不参与程序的运行<br><strong>单行注释</strong> </p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; 内容</span></pre></td></tr></table></figure>
-<p><strong>多行注释</strong> </p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">&#x2F;* </span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">。。。。。。</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">。。。。。。</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">。。。。。。</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line">*&#x2F;</span></pre></td></tr></table></figure>
-<p><strong>文档注释</strong></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">&#x2F;**  </span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">。。。。。。</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">是对一段代码概括性的解释说明</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">（用于对方法和类加以说明）</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line"> 。。。。。。</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line">*&#x2F;</span></pre></td></tr></table></figure>
-<hr>
-<h1 id="命名"><a href="#命名" class="headerlink" title="命名"></a><strong>命名</strong></h1><hr>
-<p><strong>UpperCamelCase</strong>（大驼峰式命名法）<br>适用于：类名、接口名<br>每个单词的首字母大写<br>如: Age<br>    SumOfApple<br>    DayOfWeek</p>
-<p><strong>lowerCamelCase</strong> （小驼峰式命名法）<br>适用于：局部变量名、参数名、<br>成员变量名、方法名<br>第一个单词的首字母不大写，其余单词首字母大写<br>如:age<br>   sumOfApple<br>   dayOfWeek</p>
-<hr>
-<h1 id="数据类型"><a href="#数据类型" class="headerlink" title="数据类型"></a><strong>数据类型</strong></h1><hr>
-<h2 id="基本数据类型"><a href="#基本数据类型" class="headerlink" title="基本数据类型"></a>基本数据类型</h2><p>都是值类型，其变量存储实际数据的值<br>1.整型（4种） ：只有十进制、八进制（0打头）和十六进制(0x、0X前缀)。<br>2.实型（2种）: 小数表示法和指数表示法，只有十进制。<br>3.字符型<br>4.布尔型<br><img src="/images/%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B.png" alt="alt"><br>注:<br>1字节（Byte） = 8位（bit， 比特）<br>内存按字节单位存取数据<br>1K(B) = 1024  (B)<br>1M(B) = 1024 K(B)<br>1G(B) = 1024 M(B)<br>1T(B) = 1024 G(B)</p>
-<hr>
-<h2 id="引用类型"><a href="#引用类型" class="headerlink" title="引用类型"></a>引用类型</h2><p>其变量存储实际数据的地址<br>包括：字符串、数组、类、接口，所有引用类型的默认值都是null。<br>（字符串类型：String常量 “一串字符”，默认值为 null）<br>如：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">String  zhang &#x3D; “ZhangSan”;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">String  xiaoZhang &#x3D; zhang;</span></pre></td></tr></table></figure>
+        <p>又称子程序<br>子程序无法自己执行<br><img src="/images/%E6%96%B9%E6%B3%95.png" alt="alt"><br><strong>小括号之前，都是函数名</strong><br>现在需要在定义方法时定义静态方法<br>静态方法只能调用静态方法<br><strong>参数的传递</strong><br>不同方法之间的变量是拥有不同的内存空间的（形参的改变不会影响到实参）<br>但是数组不同，形参和实参都是一个数组空间的引用，所以不同方法可以影响同一个数组</p>
+<p>函数可以没有返回值，表现为return语句后为空，或者没有return语句<br>这是如果没有输出语句或者形参不为数组，则该方法无意义<br><strong>函数的调用</strong><br>有返回值的函数可以使用表达式和独立语句调用<br>无返回值的函数只能使用独立的语句调用</p>
 
     </div>
 </article>
@@ -393,6 +372,12 @@
             
             <li class="list-group-item">
                 <span class="post-title">
+                    <a href="/2019/12/05/do%E2%80%94%E2%80%94while%E8%AF%AD%E5%8F%A5%E7%BB%83%E4%B9%A0%E9%A2%98/">do——while语句练习题</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
                     <a href="/2019/12/07/for%E8%AF%AD%E5%8F%A5%E7%BB%83%E4%B9%A0%E9%A2%98/">for语句练习题</a>
                 </span>
             </li>
@@ -441,12 +426,6 @@
             
             <li class="list-group-item">
                 <span class="post-title">
-                    <a href="/2019/12/03/%E8%AF%AD%E5%8F%A5/">语句</a>
-                </span>
-            </li>
-            
-            <li class="list-group-item">
-                <span class="post-title">
                     <a href="/2019/12/02/%E8%BF%90%E7%AE%97%E7%AC%A6/">运算符</a>
                 </span>
             </li>
@@ -462,17 +441,17 @@
 
                 
                 <li>
-                    <a href="/2019/12/01/%E7%BC%96%E7%A8%8B%E5%9F%BA%E7%A1%80/index.html#sidebar-tags" data-toggle="tab" id="tags-tab">热门标签</a>
+                    <a href="/2019/12/10/%E5%87%BD%E6%95%B0/index.html#sidebar-tags" data-toggle="tab" id="tags-tab">热门标签</a>
                 </li>
                 
                 
                 <li>
-                    <a href="/2019/12/01/%E7%BC%96%E7%A8%8B%E5%9F%BA%E7%A1%80/index.html#sidebar-friend-links" data-toggle="tab" id="friend-links-tab">友情链接</a>
+                    <a href="/2019/12/10/%E5%87%BD%E6%95%B0/index.html#sidebar-friend-links" data-toggle="tab" id="friend-links-tab">友情链接</a>
                 </li>
                 
                 
                 <li>
-                    <a href="/2019/12/01/%E7%BC%96%E7%A8%8B%E5%9F%BA%E7%A1%80/index.html#sidebar-links" data-toggle="tab" id="links-tab">个人链接</a>
+                    <a href="/2019/12/10/%E5%87%BD%E6%95%B0/index.html#sidebar-links" data-toggle="tab" id="links-tab">个人链接</a>
                 </li>
                 
             </ul>
@@ -480,9 +459,9 @@
                 
                 <div class="cloud-tags tab-pane nav bs-sidenav fade" id="sidebar-tags">
     
-    <a href="/tags/%E7%BB%83%E4%B9%A0%E9%A2%98/" style="font-size: 12.482015368384005px;" class="tag-cloud-link">练习题</a>
+    <a href="/tags/%E7%BB%83%E4%B9%A0%E9%A2%98/" style="font-size: 19.00548325138453px;" class="tag-cloud-link">练习题</a>
     
-    <a href="/tags/%E5%AD%A6%E4%B9%A0/" style="font-size: 14.058566087420301px;" class="tag-cloud-link">学习</a>
+    <a href="/tags/%E5%AD%A6%E4%B9%A0/" style="font-size: 18.092169188027604px;" class="tag-cloud-link">学习</a>
     
 </div>
                 
